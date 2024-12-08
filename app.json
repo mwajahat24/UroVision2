@@ -1,0 +1,56 @@
+{
+  "expo": {
+    "name": "UroVision",
+    "slug": "urovision",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "android": {
+      "package": "com.yourcompany.urovision",
+      "versionCode": 1,
+      "permissions": [
+        "NOTIFICATIONS",
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yourcompany.urovision"
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "sounds": ["./assets/alarm.mp3"]
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow access to your camera for scanning."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "b4817291-0475-4dad-ad18-741ebee753f5"
+      }
+    },
+    "scheme": "urovision"
+  }
+}
